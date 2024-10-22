@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#87FFA9</color>
+    <color name="accent">#FF7223</color>
+    <color name="textIcon">#FFDCFB</color>
+    <color name="textPrimary">#1E1F22</color>
+    <color name="ratingActive">#FF5100</color>
+    <color name="ratingInactive">#F4F4F4</color>
+    <color name="background">#F4F4F4</color>
+
+
+
 </resources>
