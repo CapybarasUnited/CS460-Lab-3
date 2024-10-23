@@ -16,7 +16,8 @@
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="10dp"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/primary">
 
     <ImageView
         android:layout_width="28dp"
@@ -36,9 +37,39 @@
         android:gravity="center"
         android:text="@string/poster"
         android:textColor="@color/textPrimary"
-        android:textSize="16sp"
+        android:textSize="32sp"
         style="bold"/>
 
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_search"
+            android:layout_marginTop="15dp"
+            app:tint="@color/textIcon"/>
+
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/posterRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutHeader"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/accent"
+        android:text="@string/add_to_watchlist"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
