@@ -43,6 +43,7 @@
         android:layout_marginTop="35dp"
         android:layout_marginEnd="10dp"
         android:paddingTop="15dp"
+        android:text="@string/textname"
         android:textColor="@color/textPrimary"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -65,11 +66,12 @@
         android:layout_height="wrap_content"
         android:maxLines="1"
         android:ellipsize="end"
+        android:text="@string/textcreatedby"
         android:textSize="15sp"
         android:textColor="@color/textPrimary"
         app:layout_constraintEnd_toEndOf="@id/textName"
-        app:layout_constraintStart_toEndOf="@id/textName"
-        app:layout_constraintTop_toTopOf="@id/ratingBar"/>
+        app:layout_constraintStart_toStartOf="@id/textName"
+        app:layout_constraintTop_toBottomOf="@id/ratingBar"/>
 
     <TextView
         android:id="@+id/textStory"
@@ -78,11 +80,12 @@
         android:layout_marginTop="2dp"
         android:maxLines="2"
         android:ellipsize="end"
+        android:text="@string/textstory"
         android:textSize="13sp"
         android:textColor="@color/textPrimary"
         app:layout_constraintEnd_toEndOf="@id/textName"
-        app:layout_constraintStart_toEndOf="@id/textName"
-        app:layout_constraintTop_toTopOf="@id/textCreatedBy"/>
+        app:layout_constraintStart_toStartOf="@id/textName"
+        app:layout_constraintTop_toBottomOf="@id/textCreatedBy"/>
 
     <ImageView
         android:id="@+id/imageSelected"

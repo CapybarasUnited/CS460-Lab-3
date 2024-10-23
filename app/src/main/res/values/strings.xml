@@ -3,4 +3,7 @@
     <string name="poster">Poster</string>
     <string name="add_to_watchlist">Add to Watchlist</string>
     <string name="selectedimage">SelectedImage</string>
+    <string name="textname">textName</string>
+    <string name="textcreatedby">textCreatedBy</string>
+    <string name="textstory">textStory</string>
 </resources>
