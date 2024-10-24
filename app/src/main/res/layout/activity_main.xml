@@ -35,8 +35,8 @@
         android:layout_marginEnd="10dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="@string/poster"
-        android:textColor="@color/textPrimary"
+        android:text="@string/name"
+        android:textColor="@color/textIcon"
         android:textSize="32sp"
         style="bold"/>
 
@@ -58,11 +58,10 @@
         android:orientation="vertical"
         android:padding="5dp"
         app:layout_constraintTop_toBottomOf="@id/layoutHeader"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        />
+        app:layout_constraintBottom_toTopOf="@id/buttonAddToWatchlist"/>
 
     <Button
+        android:id="@+id/buttonAddToWatchlist"
         android:layout_width="match_parent"
         android:layout_height="43dp"
         android:background="@color/accent"
@@ -70,6 +69,7 @@
         android:textSize="15sp"
         android:textAllCaps="false"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/posterRecyclerView"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
