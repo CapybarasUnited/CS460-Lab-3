@@ -98,8 +98,8 @@ public class PosterAdapter extends RecyclerView.Adapter<PosterAdapter.PosterView
                 @Override
                 public void onClick(View v) {
                     if(poster.isSelected) {
-                        viewBackground.setBackgroundResource(R.drawable.poster_selected_background);
-                        imageSelected.setVisibility(View.VISIBLE);
+                        viewBackground.setBackgroundResource(R.drawable.poster_background);
+                        imageSelected.setVisibility(View.GONE);
                         poster.isSelected = false;
                         if(getSelectedPoster().isEmpty()) {
                             postersListener.onPosterAction(false);
@@ -108,8 +108,9 @@ public class PosterAdapter extends RecyclerView.Adapter<PosterAdapter.PosterView
 
                     else {
                         viewBackground.setBackgroundResource(R.drawable.poster_selected_background);
-                        imageSelected.setVisibility(View.GONE);
-                        //TODO
+                        imageSelected.setVisibility(View.VISIBLE);
+                        poster.isSelected = true;
+                        postersListener.onPosterAction(true);
                     }
                 }
             });
