@@ -36,7 +36,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:text="@string/name"
-        android:textColor="@color/textIcon"
+        android:textColor="@color/special"
         android:textSize="32sp"
         style="bold"/>
 
@@ -63,13 +63,15 @@
     <Button
         android:id="@+id/buttonAddToWatchlist"
         android:layout_width="match_parent"
-        android:layout_height="43dp"
+        android:layout_height="50dp"
         android:background="@color/accent"
         android:text="@string/add_to_watchlist"
         android:textSize="15sp"
         android:textAllCaps="false"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/posterRecyclerView"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/posterRecyclerView"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

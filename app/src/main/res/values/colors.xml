@@ -10,7 +10,7 @@
     <color name="ratingActive">#FF5100</color>
     <color name="ratingInactive">#F4F4F4</color>
     <color name="background">#F4F4F4</color>
-
+    <color name="special">#FF416AD3</color>
 
 
 </resources>
